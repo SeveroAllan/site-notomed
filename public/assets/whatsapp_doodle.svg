@@ -1,0 +1,99 @@
+<svg width="360" height="640" viewBox="0 0 360 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.18" stroke="#8A7E72" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Balão de fala -->
+    <path d="M30 40c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v10c0 6.6-5.4 12-12 12h-4l-8 6v-6h-4c-6.6 0-12-5.4-12-12V40z"/>
+    <circle cx="45" cy="46" r="1.5" fill="#8A7E72"/>
+    <circle cx="53" cy="46" r="1.5" fill="#8A7E72"/>
+    <circle cx="61" cy="46" r="1.5" fill="#8A7E72"/>
+
+    <!-- Caneca de café -->
+    <path d="M120 45v14c0 3 2.5 5 5 5h14c2.5 0 5-2 5-5V45h-24z"/>
+    <path d="M144 48h4c2 0 3 1.5 3 3.5s-1 3.5-3 3.5h-4"/>
+    <path d="M126 38c0-2 1-3 1-4m5 4c0-2 1-3 1-4m5 4c0-2 1-3 1-4"/>
+
+    <!-- Coração -->
+    <path d="M220 40c-3-4-9-4-12 0-3-4-9-4-12 0-4 5 1 12 12 18 11-6 16-13 12-18z"/>
+
+    <!-- Estrela -->
+    <path d="M300 45l2 5 5 1-4 3 1 5-4-3-4 3 1-5-4-3 5-1z"/>
+
+    <!-- Câmera -->
+    <rect x="40" y="130" width="28" height="20" rx="3"/>
+    <circle cx="54" cy="140" r="5"/>
+    <path d="M48 130l2-4h8l2 4"/>
+
+    <!-- Carinha sorrindo -->
+    <circle cx="150" cy="140" r="14"/>
+    <circle cx="145" cy="136" r="1.5" fill="#8A7E72"/>
+    <circle cx="155" cy="136" r="1.5" fill="#8A7E72"/>
+    <path d="M144 144c2 3 10 3 12 0"/>
+
+    <!-- Nota musical -->
+    <path d="M240 145v-16l14-4v16m-14-10l14-4"/>
+    <circle cx="236" cy="147" r="4"/>
+    <circle cx="250" cy="143" r="4"/>
+
+    <!-- Relógio -->
+    <circle cx="310" cy="140" r="12"/>
+    <path d="M310 133v7l4 3"/>
+
+    <!-- Mensagem envelope -->
+    <rect x="40" y="230" width="26" height="18" rx="2"/>
+    <path d="M40 232l13 9 13-9"/>
+
+    <!-- Lâmpada ideia -->
+    <path d="M140 230c-5 0-9 4-9 9 0 3 2 6 4 7v3h10v-3c2-1 4-4 4-7 0-5-4-9-9-9z"/>
+    <path d="M137 252h6"/>
+
+    <!-- Polegar para cima (Like) -->
+    <path d="M230 245v-10c0-3 2-7 5-7 2 0 3 2 3 4v4h6c3 0 4 2 4 4l-2 8c-.5 2-2 3-4 3h-12v-12z"/>
+    <rect x="224" y="233" width="6" height="14" rx="1"/>
+
+    <!-- Fone de ouvido -->
+    <path d="M300 240c0-8 6-14 14-14s14 6 14 14v10h-5v-7h5m-28 7h5v-7h-5v7z"/>
+
+    <!-- Folha / Planta -->
+    <path d="M45 340c10-2 18 6 16 16-10 2-18-6-16-16zm2 14c4-4 8-8 14-12"/>
+
+    <!-- Telefone WhatsApp -->
+    <path d="M135 330c-2 0-8 6-8 10 0 8 10 18 18 18 4 0 10-6 10-8l-5-4-3 2c-1 .5-3-1-5-3s-3.5-4-3-5l2-3-4-5z"/>
+
+    <!-- Óculos de sol -->
+    <rect x="220" y="335" width="12" height="10" rx="3"/>
+    <rect x="238" y="335" width="12" height="10" rx="3"/>
+    <path d="M232 338h6m-18 2l-6-2m36 0l6 2"/>
+
+    <!-- Balão de exclamação -->
+    <circle cx="315" cy="340" r="13"/>
+    <path d="M315 333v6m0 4v1"/>
+
+    <!-- Flor -->
+    <circle cx="50" cy="440" r="4"/>
+    <circle cx="50" cy="432" r="3.5"/>
+    <circle cx="50" cy="448" r="3.5"/>
+    <circle cx="42" cy="440" r="3.5"/>
+    <circle cx="58" cy="440" r="3.5"/>
+
+    <!-- Avião de papel -->
+    <path d="M130 435l20-8-8 20-3-7-9-5z"/>
+
+    <!-- Cadeado (Privacidade) -->
+    <rect x="225" y="438" width="16" height="14" rx="2"/>
+    <path d="M228 438v-5c0-3 2-5 5-5s5 2 5 5v5"/>
+
+    <!-- Troféu / Taça -->
+    <path d="M305 430h16v8c0 5-3 8-8 8s-8-3-8-8v-8zm0 3h-4c-2 0-3 1-3 3s1 3 3 3h4m16-6h4c2 0 3 1 3 3s-1 3-3 3h-4m-10 11v6m-5 0h10"/>
+
+    <!-- Check duplo -->
+    <path d="M45 535l4 4 8-8m-4 8l8-8"/>
+
+    <!-- Pão / Pizza fatia -->
+    <path d="M135 525l16 16-20 4 4-20z"/>
+
+    <!-- Foguete -->
+    <path d="M225 535l10-10c3 1 5 3 6 6l-10 10-4-1-2-5z"/>
+
+    <!-- Nuvem com sol -->
+    <path d="M305 538c-3 0-5-2-5-5 0-2 2-4 4-4 1-3 4-5 7-5 4 0 7 2 8 6 3 0 5 2 5 5 0 3-2 5-5 5h-14z"/>
+  </g>
+</svg>
