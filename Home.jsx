@@ -4,6 +4,7 @@ import React from 'react';
 import WhatsAppHeader from './WhatsAppHeader';
 import NotaFiscalDemo from './NotaFiscalDemo';
 import FeatureRotatorSection from './FeatureRotatorSection';
+import FaqSection from './FaqSection';
 import Footer from './Footer';
 
 /**
@@ -46,8 +47,8 @@ export default function Home() {
 
               {/* Botão Pílula Verde "Ativar emissão" */}
               <div className="wac-hero-cta-wrapper">
-                <button
-                  type="button"
+                <a
+                  href="https://notomed.tech"
                   className="wac-hero-download-btn"
                   aria-label="Ativar emissão"
                 >
@@ -68,7 +69,7 @@ export default function Home() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
 
@@ -81,9 +82,12 @@ export default function Home() {
 
         {/* 3. Seção Rotativa / Acordeão #E6FFDA com os 3 Recursos */}
         <FeatureRotatorSection />
+
+        {/* 4. Seção de Perguntas Frequentes (FAQ) #FFFFFF */}
+        <FaqSection />
       </main>
 
-      {/* 4. Rodapé Integrado */}
+      {/* 5. Rodapé Integrado */}
       <Footer />
     </div>
   );

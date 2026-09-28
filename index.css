@@ -1301,6 +1301,35 @@ body {
   transform: translateY(-1px);
 }
 
+.waui-footer-noto-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.waui-footer-noto-brand:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.waui-footer-noto-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: block;
+}
+
+.waui-footer-noto-wordmark {
+  color: #F0F4F9;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-family: var(--wac-font-family);
+}
+
 .waui-footer-badge {
   display: inline-flex;
   align-items: center;
@@ -1595,7 +1624,177 @@ body {
 }
 
 /* ==========================================================================
-   6. ESTILOS DO LEGAL LAYOUT E HEADER WAUI (PÁGINAS LEGAIS)
+   6. SEÇÃO DE PERGUNTAS FREQUENTES (FAQ ACORDEÃO NO PADRÃO WAUI #FFFFFF)
+   ========================================================================== */
+.waui-faq-section {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 100px 32px 110px;
+  position: relative;
+  border-top: 1px solid rgba(17, 27, 33, 0.08);
+}
+
+.waui-faq-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.waui-faq-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.waui-faq-eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #20BA5A;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.waui-faq-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #111B21;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin: 0 0 16px;
+  font-family: var(--wac-font-family);
+}
+
+.waui-faq-subtitle {
+  font-size: 17px;
+  line-height: 1.55;
+  color: #5E5E5E;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.waui-faq-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.waui-faq-item {
+  border-bottom: 1px solid rgba(17, 27, 33, 0.1);
+  list-style: none;
+}
+
+.waui-faq-item:first-child {
+  border-top: 1px solid rgba(17, 27, 33, 0.1);
+}
+
+.waui-faq-trigger {
+  width: 100%;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 8px;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-family: var(--wac-font-family);
+  transition: background-color 0.18s ease;
+  border-radius: 8px;
+}
+
+.waui-faq-trigger:hover {
+  background-color: rgba(17, 27, 33, 0.02);
+}
+
+.waui-faq-trigger:focus-visible {
+  outline: 2px solid #25D366;
+  outline-offset: 2px;
+}
+
+.waui-faq-chevron {
+  width: 13px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #111B21;
+  transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.18s ease;
+  transform-origin: center center;
+}
+
+.waui-faq-chevron--open {
+  transform: rotate(90deg);
+  color: #20BA5A;
+}
+
+.waui-faq-question {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #111B21;
+  margin: 0;
+  letter-spacing: -0.015em;
+  font-family: var(--wac-font-family);
+  transition: color 0.18s ease;
+}
+
+.waui-faq-trigger:hover .waui-faq-question {
+  color: #20BA5A;
+}
+
+.waui-faq-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.32s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.25s ease;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.waui-faq-panel--open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.waui-faq-panel-inner {
+  min-height: 0;
+}
+
+.waui-faq-answer {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #222222;
+  margin: 0;
+  padding: 0 16px 26px 41px;
+}
+
+@media (max-width: 768px) {
+  .waui-faq-section {
+    padding: 64px 20px 72px;
+  }
+  .waui-faq-header {
+    margin-bottom: 36px;
+  }
+  .waui-faq-title {
+    font-size: 30px;
+  }
+  .waui-faq-subtitle {
+    font-size: 15.5px;
+  }
+  .waui-faq-trigger {
+    gap: 16px;
+    padding: 20px 4px;
+  }
+  .waui-faq-question {
+    font-size: 17.5px;
+  }
+  .waui-faq-answer {
+    font-size: 15px;
+    padding: 0 8px 20px 33px;
+  }
+}
+
+/* ==========================================================================
+   7. ESTILOS DO LEGAL LAYOUT E HEADER WAUI (PÁGINAS LEGAIS)
    ========================================================================== */
 .waui-page-wrapper {
   min-height: 100vh;

@@ -15,33 +15,33 @@ import Link from 'next/link';
 
 const FOOTER_SECTIONS = [
   {
-    title: 'O que fazemos',
+    title: 'Produto',
     links: [
       { label: 'Emissão na conversa', href: '/#features' },
       { label: 'Extração automática com IA', href: '/#features' },
       { label: 'Envio de NFS-e em PDF', href: '/#features' },
-      { label: 'Conciliação Open Finance', href: '/#features' },
-      { label: 'Segurança & Sigilo CFM', href: '/privacidade' },
+      { label: 'Padrão Nacional NFS-e', href: '/#faq' },
+      { label: 'Ativar emissão', href: 'https://notomed.tech' },
     ],
   },
   {
-    title: 'Quem somos',
+    title: 'Institucional',
     links: [
       { label: 'Sobre a Noto Med', href: '/' },
-      { label: 'Tecnologia & Inovação', href: '/' },
+      { label: 'Para Consultórios & Clínicas', href: '/' },
       { label: 'Ética Médica & LGPD', href: '/privacidade' },
       { label: 'Segurança da Informação', href: '/termos' },
       { label: 'Contato com a Diretoria', href: 'mailto:contato@noto.com.br' },
     ],
   },
   {
-    title: 'Usar o WhatsApp',
+    title: 'Como funciona',
     links: [
-      { label: 'WhatsApp Web', href: 'https://web.whatsapp.com', external: true },
-      { label: 'WhatsApp para iPhone', href: 'https://apps.apple.com', external: true },
-      { label: 'WhatsApp para Android', href: 'https://play.google.com', external: true },
-      { label: 'WhatsApp Business', href: 'https://business.whatsapp.com', external: true },
-      { label: 'Solicitar Acesso Antecipado', href: '/#ativar-section' },
+      { label: 'Integração simplificada', href: '/#features' },
+      { label: 'Respostas rápidas "/"', href: '/#faq' },
+      { label: 'Validação de CPF', href: '/#faq' },
+      { label: 'Certificado Digital A1', href: '/#faq' },
+      { label: 'Reforma Tributária (IBS/CBS)', href: '/#faq' },
     ],
   },
   {
@@ -57,10 +57,10 @@ const FOOTER_SECTIONS = [
   {
     title: 'Precisa de ajuda?',
     links: [
-      { label: 'Suporte via WhatsApp', href: 'mailto:suporte@noto.com.br' },
-      { label: 'Central de Atendimento', href: 'mailto:suporte@noto.com.br' },
+      { label: 'Central de Suporte', href: 'mailto:suporte@noto.com.br' },
+      { label: 'Atendimento ao Médico', href: 'mailto:suporte@noto.com.br' },
       { label: 'Canal do DPO (LGPD)', href: 'mailto:dpo@noto.com.br' },
-      { label: 'Dúvidas Frequentes', href: '/#features' },
+      { label: 'Perguntas Frequentes (FAQ)', href: '/#faq' },
       { label: 'Status: 100% Operacional', href: '#status' },
     ],
   },
@@ -113,12 +113,31 @@ const SOCIAL_LINKS = [
 function FooterBrand() {
   return (
     <div className="waui-footer-brand-wrap">
-      <Link href="/" className="waui-footer-logo-link" aria-label="Noto + WhatsApp Início">
-        <img
-          src="/assets/noto+whatsapp.svg"
-          alt="Noto + WhatsApp"
-          className="waui-footer-logo-img"
-        />
+      <Link href="/" className="waui-footer-logo-link" aria-label="Noto Início">
+        <span className="waui-footer-noto-brand">
+          <svg
+            width="32"
+            height="32"
+            viewBox="381 0 294 294"
+            fill="none"
+            className="waui-footer-noto-icon"
+            aria-hidden="true"
+          >
+            <path
+              d="M624.469 0H431.531C403.624 0 381 22.6236 381 50.5312V243.469C381 271.376 403.624 294 431.531 294H624.469C652.376 294 675 271.376 675 243.469V50.5312C675 22.6236 652.376 0 624.469 0Z"
+              fill="#222222"
+            />
+            <path
+              d="M572.245 161.146L583.511 216.994L636.323 187.605L572.245 161.146Z"
+              fill="#7FAA00"
+            />
+            <path
+              d="M554.149 68.4433C514.542 81.7138 433.702 112.727 433.702 112.727L445.182 148.498C449.318 161.383 459.18 171.632 471.896 176.261L583.217 216.779L554.149 68.4433Z"
+              fill="#B7F20B"
+            />
+          </svg>
+          <span className="waui-footer-noto-wordmark">noto</span>
+        </span>
       </Link>
       <div className="waui-footer-badge">
         <span className="waui-footer-pulse-dot" />
@@ -131,7 +150,7 @@ function FooterBrand() {
 function DownloadButton() {
   return (
     <a
-      href="/#ativar-section"
+      href="https://notomed.tech"
       className="waui-footer-cta-pill"
       aria-label="Ativar emissão de nota fiscal"
     >
@@ -276,10 +295,10 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Disclaimer Regulatório e de Marca Registrada */}
+        {/* Disclaimer Regulatório */}
         <div className="waui-footer-notice-block">
           <p className="waui-footer-disclaimer-text">
-            WhatsApp® é uma marca registrada da Meta Platforms, Inc. A Noto Med Tecnologia é uma plataforma independente de emissão e gestão fiscal voltada a profissionais da saúde, operando em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) e resoluções do Conselho Federal de Medicina (CFM).
+            A Noto Med Tecnologia LTDA. é uma plataforma independente de tecnologia e emissão fiscal voltada a profissionais e clínicas de saúde, operando com criptografia de ponta a ponta e em estrita conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) e resoluções do Conselho Federal de Medicina (CFM).
           </p>
         </div>
       </div>

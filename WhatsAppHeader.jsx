@@ -85,20 +85,28 @@ export default function WhatsAppHeader() {
         {/* Direita: Botões em formato Pílula lado a lado */}
         <div className="wac-header-actions">
           {/* Botão 1: Outline branco/preto com ícone de seta */}
-          <button type="button" className="wac-pill-btn-outline">
+          <a
+            href="https://notomed.tech"
+            className="wac-pill-btn-outline"
+            aria-label="Iniciar sessão"
+          >
             <span>Iniciar sessão</span>
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
               <path d="M6 3.5L10.5 8L6 12.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-          </button>
+          </a>
 
           {/* Botão 2: Preenchido em verde com Ativar emissão */}
-          <button type="button" className="wac-pill-btn-green" aria-label="Ativar emissão">
+          <a
+            href="https://notomed.tech"
+            className="wac-pill-btn-green"
+            aria-label="Ativar emissão"
+          >
             <span>Ativar emissão</span>
             <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
               <path d="M8 2.5V11M8 11L4.5 7.5M8 11L11.5 7.5M3 13.5H13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-          </button>
+          </a>
         </div>
       </div>
     </header>

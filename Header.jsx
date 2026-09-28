@@ -55,12 +55,12 @@ export function Header({ currentPath = 'home', onOpenModal }) {
               <span>Ativar emissão</span>
             </button>
           ) : (
-            <Link
-              href="/#ativar-btn"
+            <a
+              href="https://notomed.tech"
               className="waui-header-pill-cta"
             >
               <span>Ativar emissão</span>
-            </Link>
+            </a>
           )}
         </div>
       </div>
